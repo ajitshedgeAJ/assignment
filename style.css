@@ -1,0 +1,15 @@
+@font-face{
+    font-family: Ajit;
+    src: url(font/ITCKRIST.TTF);
+}
+h1{
+    font-family: Ajit;
+    text-align: center;
+    font-size: 50px;
+    color:brown;
+
+}
+h2{
+    text-align: center;
+    font-size: 40px;
+}

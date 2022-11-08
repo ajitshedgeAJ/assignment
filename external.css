@@ -1,0 +1,13 @@
+h1{
+    color: green;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: underline;
+}
+p{
+    color: blueviolet;
+    text-align: center;
+    font-size: 30px;
+    font-style: italic;
+}
