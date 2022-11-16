@@ -1,0 +1,21 @@
+h1{
+     
+    border-left: 12px orange solid;
+    border-right: 6px green solid;
+    border-bottom: 40px gray solid;
+    border-top: 20px blue solid;
+    background-color: yellow;
+    color: blue;
+    padding: 50px 100px;
+    margin-left: 150px;
+}
+ul{
+    visibility: hidden;
+}
+table{
+    width: 70%;
+    border-collapse: collapse;
+}
+table td,th{
+ visibility: collapse;
+}
