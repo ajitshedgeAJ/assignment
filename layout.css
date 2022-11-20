@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    width: 550px;
+    height: 600px;
+    margin: auto;
+    margin-top: 50px;
+}
+.header{
+    width: 545px;
+    height: 50px;
+    background-color: brown;
+    border-top-left-radius:30px ;
+    border-top-right-radius:30px ;
+    margin-bottom: 3px;
+}
+.content{
+    width: 545px;
+    height: 495px;
+    background-color: yellow;
+}
+.one{
+    width: 150px;
+    height: 150px;
+    background-image: url(image/two.jpg);
+    float: left;
+    background-size:150px 150px;
+    margin-top: 11px;
+    margin-left: 6px;
+}
+.two{
+    width: 150px;
+    height: 150px;
+    background-image: url(image/four.jpg);
+    background-size:150px 150px;
+    float: left;
+    margin-top: 11px;
+    margin-left: 12px;
+}
+.three{
+    width:210px;
+    height: 473px;
+    background-image: url(image/three.jpg);
+    background-size:210px 473px ;
+    float:right;
+    margin-top: 11px;
+    margin-right: 6px;
+
+}
+.four{
+    width: 150px;
+    height: 150px;
+    background-image: url(image/one.jpg);
+    float: left;
+    background-size:150px 150px;
+    margin-left: 6px;
+    margin-top: 11px;
+
+}
+.five{
+    width: 150px;
+    height: 150px;
+    background-image: url(image/five.jpg);
+    float: left;
+    background-size:150px 150px;
+    margin-left: 12px;
+    margin-top: 11px;
+}
+.six{
+    width: 150px;
+    height: 150px;
+    background-image: url(image/six.jpg);
+    float: left;
+    background-size:150px 150px;
+    margin-left: 6px;
+    margin-top: 11px;
+}
+.seven{
+    width: 150px;
+    height: 150px;
+    background-image: url(image/seven.jpg);
+    float: left;
+    background-size:150px 150px;
+    margin-left: 12px;
+    margin-top: 11px;
+}
+.footer{
+    width: 545px;
+    height: 50px;
+    background-color: brown;
+    border-bottom-left-radius:30px ;
+    border-bottom-right-radius:30px ;
+    margin-top: 3px;
+}
