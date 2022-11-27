@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    margin: 1px 1px;
+    border-radius: 5px;
+}
+.main{
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    background-color:white;
+    color: beige;
+    text-align:center;
+}
+.header{
+    background-color:white;
+    flex-grow: 2;
+    display: flex;
+}
+.logo{
+    flex-grow: 2;
+    background-color: red;
+}
+.heading{
+    flex-grow: 8;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+.service{
+    flex-grow: 2;
+    background-color: yellow;
+}
+.menu{
+    flex-grow: 1;
+    background-color: green;
+}
+.content{
+    flex-grow: 7;
+    background-color:white;
+    display: flex;
+}
+.one{
+    flex-grow: 2;
+    background-color: blueviolet;
+}
+.two{
+    flex-grow: 2;
+    background-color: burlywood;
+}
+.three{
+    flex-grow: 3;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+.box1{
+    flex-grow: 2;
+    background-color: cadetblue;
+}
+.box2{
+    flex-grow: 2;
+    background-color: white;
+    display: flex;
+}
+.box2 .frist{
+    flex-grow: 1;
+    background-color: red;
+    border-radius: 15px;
+}
+.box2 .second{
+    flex-grow: 1;
+    background-color:green;
+    border-radius: 15px;
+}
+.box2 .third{
+    flex-grow: 1;
+    background-color: blue;
+    border-radius: 15px;
+}
+.box3{
+    flex-grow: 2;
+    background-color:yellowgreen;
+}
+.footer{
+    flex-grow: 1;
+    background-color: red;
+}
