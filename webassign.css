@@ -1,0 +1,21 @@
+.login{
+    height: 100px;
+    width: 500px;
+    margin: auto;
+    background-color: silver;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+.login input{
+    width: 350px;
+    height: 20px;
+    background-color: silver;
+    font-weight: bold;
+}
+.login button{
+    margin-top: 15px;
+    width: 100px;
+    height: 30px;
+    background-color: silver;
+    border-radius: 3px;
+}

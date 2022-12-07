@@ -11,9 +11,43 @@
     height: 60px;
     width: 100%;
     background-color: #2874f0;
+    justify-content: space-around;
+}
+.header img{
+    padding-left: 140px;
+}
+.header input{
+    height: 33px;
+    width: 500px;
+    text-align: center;
+    border: none;
+}
+.header button{
+    background-color: white;
+    height: 33px;
+    width: 120px;
+    font-size: large;
+    font-weight: bolder;
+    color:  #2874f0;
+    border: none;
+}
+.header a{
+    text-decoration: none;
+    font-size: large;
+    font-weight: bolder;
+    color: white;
+}
+.cart{
+    text-decoration: none;
+    font-size: large;
+    font-weight: bolder;
+    color: white;
+    padding-right: 120px;
 }
 .content{
-    background-color: aquamarine;
+    background-color:white;
+    display: flex;
+    
 }
 .footer{
     background-color: red;
