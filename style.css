@@ -2,13 +2,18 @@
     margin: 0;
     padding: 0;
 } 
+body{
+    display: flex;
+    flex-direction: column;
+}
 .main{
     display: flex;
     flex-wrap: wrap;
 }
 .aside{
     flex-grow: 1;
-    flex-basis: 200px;
+    flex-shrink: 8;
+    /* flex-basis: 300px; */
     background-color: silver;
     padding: 10px;
     text-align: center;
@@ -20,10 +25,12 @@
     width: 150px;
 }
 .content{
-    flex-grow: 8;
+    flex-grow: 9;
+    flex-shrink: 2;
     flex-basis: 600px; 
     border: solid silver;
-    margin-left:5px;
+    /* margin-left:5px; */
+    padding: 15px;
 
 }
 .header{
@@ -95,7 +102,7 @@
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
     #wiki{
-        width: 200px;
+        width: 250px;
     }
     .aside li{
         padding: 10px;
