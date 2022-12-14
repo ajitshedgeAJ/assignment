@@ -1,0 +1,270 @@
+*{
+    margin: 0;
+    padding: 0;
+} 
+.main{
+    display: flex;
+    flex-wrap: wrap;
+}
+.aside{
+    flex-grow: 1;
+    flex-basis: 200px;
+    background-color: silver;
+    padding: 10px;
+    text-align: center;
+}
+.aside li{
+    list-style: none;
+}
+#wiki{
+    width: 150px;
+}
+.content{
+    flex-grow: 8;
+    flex-basis: 600px; 
+    border: solid silver;
+    margin-left:5px;
+
+}
+.header{
+    display: flex;
+    flex-direction: column;
+}
+.nav1{
+    display: flex;
+    justify-content: end;
+    
+}  
+.nav1 li{
+    list-style: none;
+    padding: 10px;
+}  
+.nav2{
+    display: flex;
+    justify-content: space-between;
+}
+.one{
+    display:flex;
+}
+.one li{
+    list-style: none;
+    border:solid silver;
+    padding: 5px;
+}
+.two{
+    display: flex;
+}
+.two li{
+    list-style: none;
+    padding: 10px;
+}
+
+.heading{
+    display: flex;
+    justify-content: space-between;
+    border: solid;
+    margin-top: 10px;
+    border-color: silver;
+}
+.info{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+.first{
+    flex-basis: 500px;
+    flex-grow: 1;
+    text-align:justify;
+}
+.second{
+    background-color: silver;
+    margin: auto;
+    text-align: center;
+}
+.second img{
+    height: 350px;
+    
+} 
+@media all and (min-width:200px) {
+    h1{
+        background-color: blue;
+        color: white;
+    }
+    .aside h1{
+        font-size: 35px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    #wiki{
+        width: 200px;
+    }
+    .aside li{
+        padding: 10px;
+    }
+    .aside li a{
+        font-size: larger;
+        letter-spacing: 3px;
+    }
+    .nav1{
+        margin-top: 10px;
+        flex-direction: column;
+        text-align: center;
+        background-color: gray;
+        color:white;
+        
+    }
+    .nav2{
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    .one{
+        justify-content: center;
+        color: blue;
+    }
+    .two{
+        justify-content: center;
+        flex-wrap: wrap;
+        color: blue;
+    }
+    h2{
+        background-color: blue;
+        color: white;
+    }
+    .first{
+        margin-top: 15px;
+    }
+    .second{
+        align-items: center;
+        color: white;
+        margin-top: 15px;
+
+    }
+    @media all and (min-width:400px) {
+        h1{
+            background-color: red;
+            color: white;
+        }
+        .aside h1{
+            font-size: 40px;
+        }
+        h2{
+            background-color: red;
+        }
+        #wiki{
+            width: 300px;
+        }
+        .nav1{
+            font-size: 20px;
+        }
+        .one{
+            color: red;
+        }
+        .two{
+            color: red;
+        }
+        .second{
+            color: red;
+            text-align: center;
+        }
+        .second img{
+            width: 400px;
+        }
+    }
+    @media all and (min-width:600px) {
+        h1{
+            background-color: green;
+            color: white;
+        }
+        .aside h1{
+            font-size:50px;
+        }
+        h2{
+            background-color: green;
+        }
+        #wiki{
+            width: 400px;
+        }
+        .aside li a{
+            font-weight: bolder;
+            font-size: 30px;
+            letter-spacing: 5px;
+        }
+        .nav1{
+            flex-direction: row;
+            justify-content: center;
+            color: red;
+        }
+        .nav2{
+            color: blue;
+        }
+        .second{
+            color: green;
+            text-align: center;
+        }
+        .second img{
+            width: 500px;
+        }
+    }
+    @media all and (min-width:800px) {
+        h1{
+            background-color:blueviolet;
+        }
+        h2{
+            background-color: blueviolet;
+        }
+        .nav1{
+            color: white;
+        }
+        .nav2{
+            flex-direction: row;
+            font-size: larger;
+            color: red;
+        }
+        .second{
+            color: blueviolet;
+        }
+    }    
+    @media all and (min-width:1000px) {
+            h1{
+                background-color: darkturquoise;
+            }
+            .aside h1{
+                font-size: 30px;
+            }
+            .aside li a{
+                font-size: 20px;
+            }
+            h2{
+                background-color: darkturquoise;
+            }
+            .nav2{
+                color: black;
+            }
+            #wiki{
+                width: 200px;
+            }
+    }
+    @media all and (min-width:1200px) {
+        h1{
+            background-color: black;
+            color: white;
+        }
+        h2{
+            background-color: black;
+            color: white;
+        }
+        .nav1{
+            justify-content: right;
+        }
+        .nav1 li{
+            padding: 30px;
+        }
+        .second{
+            margin-left: 5px;
+            margin-top: 20px;
+            color:black;
+            font-weight: bolder;
+        }
+    }
+
+    
+}
