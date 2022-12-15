@@ -9,28 +9,34 @@ body{
 .main{
     display: flex;
     flex-wrap: wrap;
+    
 }
 .aside{
     flex-grow: 1;
     flex-shrink: 8;
-    /* flex-basis: 300px; */
+    /* flex-basis: 300px;  */
     background-color: silver;
     padding: 10px;
     text-align: center;
+}
+ul{
+    display: flex;
+    flex-direction: column;
 }
 .aside li{
     list-style: none;
 }
 #wiki{
-    width: 150px;
+    width: 180px;
 }
 .content{
-    flex-grow: 9;
+    flex-grow: 6;
     flex-shrink: 2;
     flex-basis: 600px; 
     border: solid silver;
-    /* margin-left:5px; */
-    padding: 15px;
+    margin-left:5px;
+    padding: 10px;
+    justify-content: center;
 
 }
 .header{
@@ -79,23 +85,32 @@ body{
     margin-top: 10px;
 }
 .first{
-    flex-basis: 500px;
-    flex-grow: 1;
+     flex-basis: 150px;
+    /* flex-grow: 1; */
+    flex-grow: 4;
     text-align:justify;
 }
 .second{
     background-color: silver;
-    margin: auto;
+    /* margin: auto; */
+    flex-grow: 1;
+    align-content: center;
+    justify-content: center;
     text-align: center;
+    margin-left: 5px;
 }
 .second img{
-    height: 350px;
+    padding-top: 30px;
+    height: 150px;
     
 } 
-@media all and (min-width:200px) {
+ @media all and (min-width:200px) {
     h1{
         background-color: blue;
         color: white;
+    }
+    .aside{
+        background:silver;
     }
     .aside h1{
         font-size: 35px;
@@ -110,6 +125,9 @@ body{
     .aside li a{
         font-size: larger;
         letter-spacing: 3px;
+    }
+    .content{
+        margin: auto;
     }
     .nav1{
         margin-top: 10px;
@@ -157,7 +175,7 @@ body{
             background-color: red;
         }
         #wiki{
-            width: 300px;
+            width: 350px;
         }
         .nav1{
             font-size: 20px;
@@ -270,6 +288,9 @@ body{
             margin-top: 20px;
             color:black;
             font-weight: bolder;
+        }
+        .second img{
+            height: 400px;
         }
     }
 
