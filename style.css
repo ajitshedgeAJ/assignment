@@ -35,7 +35,7 @@ ul{
     flex-basis: 600px; 
     border: solid silver;
     margin-left:5px;
-    /* padding: 10px; */
+    padding: 10px;
     justify-content: center;
 
 }
@@ -50,7 +50,7 @@ ul{
 }  
 .nav1 li{
     list-style: none;
-    /* padding: 10px; */
+    padding: 10px;
 }
 .sub-service li{
     background-color: silver;
@@ -62,7 +62,7 @@ ul{
     color: white;
 }
 .mentors{
-   right: 180px;
+   left: 140px;
   
 }
 .mentors li{
