@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.mmain{
+    width:100vw;
+    height: 100vh;
+}
+.header{
+    height: 15vh;
+    font-size: 10vh;
+    color: white;
+    background-color: blue;
+    text-align: center;
+}
+.content{
+    background-color: green;
+    height:75vh;
+}
+.footer{
+    height: 10vh;
+    font-size: 7vh;
+    text-align: center;
+    color: white;
+    background-color: red;
+}
+p{
+    font-size: 150%;
+}
+b{
+    font-size: 2em;
+    color: white;
+}
+i{
+    font-size: 2rem;
+    color: white;
+}
+u{
+    font-size: 0.7em;
+    color: white;
+}    

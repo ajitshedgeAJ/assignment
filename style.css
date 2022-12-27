@@ -1,331 +1,101 @@
-*{
-    margin: 0;
-    padding: 0;
-} 
 body{
-    display: flex;
-    flex-direction: column;
+    background:black;
 }
-.main{
-    display: flex;
-    flex-wrap: wrap;
-    
+.container{
+    width: 300px;
+    height: 300px;
+    margin: 300px auto;
+    perspective: 600px;
 }
-.aside{
-    flex-grow: 1;
-    flex-shrink: 8;
-    /* flex-basis: 300px;  */
-    background-color: silver;
-    padding: 10px;
-    text-align: center;
-}
-ul{
-    display: flex;
-    flex-direction: column;
-}
-.aside li{
-    list-style: none;
-}
-#wiki{
-    width: 180px;
-}
-.content{
-    flex-grow: 6;
-    flex-shrink: 2;
-    flex-basis: 600px; 
-    border: solid silver;
-    margin-left:5px;
-    padding: 10px;
-    justify-content: center;
-
-}
-.header{
-    display: flex;
-    flex-direction: column;
-}
-.nav1{
-    display: flex;
-    justify-content: end;
-    
-}  
-.nav1 li{
-    list-style: none;
-    padding: 10px;
-}
-.sub-service li{
-    background-color: silver;
-    border: solid black;
-    border-radius: 15px;
-}
-.sub-service a{
-    text-decoration: none;
-    color: white;
-}
-.mentors{
-   left: 140px;
-  
-}
-.mentors li{
-    background-color: silver;
-    display: none;
-    border: solid black;
-    border-radius: 15px;
-}
-li ul{
-    display: none;
-    position: absolute;
-}
-
-ul li:hover{
-    background-color:grey;
-}
-li:hover ul{
-    display: flex;
-}
-.sub-service li:hover .mentors li{
-    display: flex;
-}
-.nav2{
-    display: flex;
-    justify-content: space-between;
-}
-.one{
-    display:flex;
-}
-.one li{
-    list-style: none;
-    border:solid silver;
-    padding: 5px;
-}
-.two{
-    display: flex;
-}
-.two li{
-    list-style: none;
-    padding: 10px;
-}
-
-.heading{
-    display: flex;
-    justify-content: space-between;
-    border: solid;
-    margin-top: 10px;
-    border-color: silver;
-}
-.info{
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 10px;
-}
-.first{
-     flex-basis: 150px;
-    /* flex-grow: 1; */
-    flex-grow: 4;
-    text-align:justify;
-}
-.second{
-    background-color: silver;
-    /* margin: auto; */
-    flex-grow: 1;
-    align-content: center;
-    justify-content: center;
-    text-align: center;
-    margin-left: 5px;
-}
-.second img{
-    padding-top: 30px;
-    height: 150px;
-    
+.cube:hover{
+    transform: translateZ(-150px) rotateX(30deg) rotateY(360deg);
 } 
- @media all and (min-width:200px) {
-    h1{
-        background-color: blue;
-        color: white;
-    }
-    .aside{
-        background:silver;
-    }
-    .aside h1{
-        font-size: 35px;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    }
-    #wiki{
-        width: 250px;
-    }
-    .aside li{
-        padding: 10px;
-    }
-    .aside li a{
-        font-size: larger;
-        letter-spacing: 3px;
-    }
-    .content{
-        margin: auto;
-    }
-    .nav1{
-        margin-top: 10px;
-        flex-direction: column;
-        text-align: center;
-        background-color: gray;
-        color:white;
-        
-    }
-    .nav2{
-        flex-direction: column;
-        margin-top: 10px;
-    }
-    .one{
-        justify-content: center;
-        color: blue;
-    }
-    .two{
-        justify-content: center;
-        flex-wrap: wrap;
-        color: blue;
-    }
-    h2{
-        background-color: blue;
-        color: white;
-    }
-    .first{
-        margin-top: 15px;
-    }
-    .second{
-        align-items: center;
-        color: white;
-        margin-top: 15px;
+.cube{
+    width: 300px;
+    height: 300px;
+    transform-style: preserve-3d;
+    transform: translateZ(-150px) rotateX(30deg);
+    transition: 5s;
+    animation: ajit 5s infinite;
+    position: relative ;
 
-    }
-    @media all and (min-width:400px) {
-        h1{
-            background-color: red;
-            color: white;
-        }
-        .aside h1{
-            font-size: 40px;
-        }
-        h2{
-            background-color: red;
-        }
-        #wiki{
-            width: 350px;
-        }
-        .nav1{
-            font-size: 20px;
-        }
-        .one{
-            color: red;
-        }
-        .two{
-            color: red;
-        }
-        .second{
-            color: red;
-            text-align: center;
-        }
-        .second img{
-            width: 400px;
-        }
-    }
-    @media all and (min-width:600px) {
-        h1{
-            background-color: green;
-            color: white;
-        }
-        .aside h1{
-            font-size:50px;
-        }
-        h2{
-            background-color: green;
-        }
-        #wiki{
-            width: 400px;
-        }
-        .aside li a{
-            font-weight: bolder;
-            font-size: 30px;
-            letter-spacing: 5px;
-        }
-        .nav1{
-            flex-direction: row;
-            justify-content: center;
-            color: red;
-        }
-        .nav2{
-            color: blue;
-        }
-        .second{
-            color: green;
-            text-align: center;
-        }
-        .second img{
-            width: 500px;
-        }
-    }
-    @media all and (min-width:800px) {
-        h1{
-            background-color:blueviolet;
-        }
-        h2{
-            background-color: blueviolet;
-        }
-        .nav1{
-            color: white;
-        }
-        .nav2{
-            flex-direction: row;
-            font-size: larger;
-            color: red;
-        }
-        .second{
-            color: blueviolet;
-        }
-    }    
-    @media all and (min-width:1000px) {
-            h1{
-                background-color: darkturquoise;
-            }
-            .aside h1{
-                font-size: 30px;
-            }
-            .aside li a{
-                font-size: 20px;
-            }
-            h2{
-                background-color: darkturquoise;
-            }
-            .nav2{
-                color: black;
-            }
-            #wiki{
-                width: 200px;
-            }
-    }
-    @media all and (min-width:1200px) {
-        h1{
-            background-color: black;
-            color: white;
-        }
-        h2{
-            background-color: black;
-            color: white;
-        }
-        .nav1{
-            justify-content: right;
-        }
-        .nav1 li{
-            padding: 30px;
-        }
-        .second{
-            margin-left: 5px;
-            margin-top: 20px;
-            color:black;
-            font-weight: bolder;
-        }
-        .second img{
-            height: 400px;
-        }
-    }
+}
+.face{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    /* border: 5px solid white;
+    border-radius: 10px; */
+}
+.front{
+    background-image: linear-gradient(rgb(232, 26, 184),rgb(91, 91, 241)); 
+    transform: rotateY(0deg) translateZ(150px);
 
+}
+.right{
+    background-image: linear-gradient(green,rgb(89, 128, 212));
+    transform: rotateY(90deg) translateZ(150px);
+
+}
+.back{
+    background-image: linear-gradient(red,rgb(224, 224, 17));
+    transform: rotateY(180deg) translateZ(150px);
+
+}
+.left{
+
+    background-image: linear-gradient(yellow,rgb(41, 196, 61));
+    transform: rotateY(-90deg) translateZ(150px);
+
+}
+.top{
     
+    background-image: linear-gradient(blueviolet,rgb(39, 152, 94));
+    transform: rotateX(90deg) translateZ(150px);
+
+}
+.bottom{
+    background-image: linear-gradient(blue,rgb(130, 47, 90));
+    transform: rotateX(-90deg) translateZ(150px);
+
+}
+@keyframes ajit{
+    /* 0%{
+        transform: rotateX(0deg) rotateY(45deg);
+    }
+    20%{
+        transform: rotateX(-45deg) rotateY(90deg);
+    }
+    40%{
+        transform: rotateX(-90deg) rotateY(180deg);
+    }
+    60%{
+        transform: rotateX(-180deg) rotateY(270deg);
+    }
+    80%{
+        transform: rotateX(-270deg) rotateY(360deg);
+    }
+    100%{
+        transform: rotateX(0deg) rotateY(360deg);
+    } */
+    0%{
+        transform: rotateX(0deg) rotateY(45deg);
+    }
+    20%{
+        transform: rotateX(-30deg) rotateY(120deg);
+    }
+    40%{
+        transform: rotateX(-100deg) rotateY(220deg);
+    }
+    60%{
+        transform: rotateX(-150deg) rotateY(250deg);
+    }
+    80%{
+        transform: rotateX(-230deg) rotateY(360deg);
+    }
+    100%{
+        transform: rotateX(30deg) rotateY(300deg);
+    }
+
+  
 }
